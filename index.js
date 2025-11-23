@@ -98,3 +98,25 @@ nam.addEventListener("input", () => msg1.innerText = "")
 email.addEventListener("input", () => msg2.innerText = "")
 textarea.addEventListener("input", () => msg4.innerText = "")
 subject.addEventListener("input", () => msg3.innerText = "")
+
+
+// page animation
+
+function pageScrollAnimation() {
+    let  elements = document.querySelectorAll('.scroll-animate');
+    elements.forEach(element => {
+        let elementPosition = element.getBoundingClientRect().top;
+        
+        let screenHeight = window.innerHeight;
+        
+        let triggerPoint = screenHeight * 0.8;
+
+        if (elementPosition < triggerPoint) {
+            element.classList.add('is-visible');
+        }
+        
+    });
+}
+
+window.addEventListener('scroll', pageScrollAnimation);
+pageScrollAnimation();

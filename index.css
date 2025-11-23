@@ -685,6 +685,20 @@ footer{
     color: #FFBD39;
 }
 
+
+/* page animation */
+.scroll-animate {
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    opacity: 0;
+    transform: translateY(20px); 
+}
+.is-visible {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+
+
 @media(max-width:1115px){
     .projects{
         padding: 100px 80px;
