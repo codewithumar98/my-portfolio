@@ -135,7 +135,7 @@ html {
     margin-bottom: 5px;
 }
 .hero-image img {
-    max-width: 500px;
+    max-width:400px;
     width: 100%;
     height: auto;
     object-fit: contain;
